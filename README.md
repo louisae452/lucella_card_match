@@ -1,4 +1,4 @@
-# Lucella game card
+# Lucella game card.
 
 INSERT LINK
 
@@ -12,7 +12,7 @@ Lucella card match is a basic card matching game. A set of cards will be laid do
 
 Although the game will use cards based on the characters of the series “Piggy before the infection started” to appeal to the series’ followers, it will be just as easily played by anybody, young and old alike.
 
-## Business goals
+## Business goals.
 
 - To create a game that is easily taken up and entertains.
 - To create a game that appeals to Piggy Before the Infection Started followers.
@@ -20,7 +20,7 @@ Although the game will use cards based on the characters of the series “Piggy 
 - To provide a game that helps improve cognitive functions.
 - To provide a game that provides increasing challenge.
 
-## User needs
+## User needs.
 
 - To have a game that can be taken up easily during a short interval of free time.
 - To be able to understand easily how the game works.
@@ -29,7 +29,7 @@ Although the game will use cards based on the characters of the series “Piggy 
 - To be able to see progress in gaming ability.
 - To be able to conect to the 'Piggy Before the Infection Started' home page easily.
 
-## User stories
+## User stories.
 
 - As the developer:
 
@@ -53,6 +53,33 @@ Although the game will use cards based on the characters of the series “Piggy 
 
     - I also want a game that portrays my favourite characters so that I can feel closer to the series.
 
+## Design.
+
+Lucella card matching is a simple card matching games. The player will be able to choose a board made of 4 x 3, 4 x 4 or 5 x 5 cards turned upside down. By uncovering two cards at a time, the player needs to find matching pairs of cards. Each time a pair is matched, it disappears until the board is empty. 
+
+On loading the game, the player will be presented with a home page.  By clicking on the play button, an option to choose the appropriate level of challenge will appear. This will lead to the desired game page.
+
+The game pages will contain the main board for the game. A link to go back to the home page will be provided, as well as a toggle to get rid of sound effects. A timer will count the time it takes for the board to be emptied. A reset button will be provided.
+Once the board is empty, a congratulations message will appear. 
+
+All pages will contain a section with a link to the Piggy Before the Infection Started home page and a rate the game feature.
+
+On clicking on the rate the game, a window will appear so that players can rate the game and give feedback.
+
+[Home page wireframe for larger screens](/assets/images/readme_images/wireframes/home-page-wireframe-%20large.jpg)
+
+[Home page wireframe for small screens](/assets/images/readme_images/wireframes/home-page-wireframe-small.jpg)
+
+[Game page wireframe](/assets/images/readme_images/wireframes/game-page-wireframe.jpg)
+
+
+## Typography and colour scheme.
+
+As the game will be used to promote the Piggy Before the Infection Started series, it will use the same colour scheme as the series’ webpage. 
+
+![Piggy Before The Infection Started series colour pallete](/assets/images/readme_images/colour_pallete.jpg)
+
+It will also use the bangers and risque fonts from google fonts.
 
 
 
@@ -62,7 +89,8 @@ Although the game will use cards based on the characters of the series “Piggy 
 
 
 
-## Credits
+
+## Credits.
 
 
 To write the readme file: [Markdown Guide: Basic Syntax.](https://www.markdownguide.org/basic-syntax/).
