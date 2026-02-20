@@ -8,7 +8,7 @@ But keeping your brain in top working condition requires some work. While the id
 
 That is where simple, easy brain  games can make a difference. In particular, memory games that require the player to concentrate and pay attention can help to improve and maintain cognitive abilities. They target short term memory which, in turn, can help maintain long term memory.
 
-Lucella card match is a basic card matching game. A set of cards will be laid down on the board and, when turning only one pair of cards at a time, the player needs to eliminate cards by matching pairs correctly. The game finishes when all the board is empty.
+Lucella card match is a basic card matching game. A set of cards will be laid down on the board and, turning only one pair of cards at a time, the player needs to eliminate cards by matching pairs correctly. The game finishes when all the board is empty.
 
 Although the game will use cards based on the characters of the series “Piggy before the infection started” to appeal to the series’ followers, it will be just as easily played by anybody, young and old alike.
 
@@ -23,11 +23,11 @@ Although the game will use cards based on the characters of the series “Piggy 
 ## User needs
 
 - To have a game that can be taken up easily during a short interval of free time.
-- To be able to understand how the game works easily.
+- To be able to understand easily how the game works.
 - To be able to choose the right level of challenge.
 - To get quick and easy to understand feedback on the results of the game.
 - To be able to see progress in gaming ability.
-- To be able to conect to the'Piggy Before the Infection Started' home page easily.
+- To be able to conect to the 'Piggy Before the Infection Started' home page easily.
 
 ## User stories
 
@@ -46,12 +46,17 @@ Although the game will use cards based on the characters of the series “Piggy 
 
     - I want a game that I can take up easily so that I can play when I just have a few free minutes.
     - I want a game that doesn't get repetitive so that if I have more time, I don't get bored playing it.
-    - I want a game which provides incresing challenge so that I can challenge myself to get better. 
+    - I want a game which provides increasing challenge so that I can challenge myself to get better. 
     - I want to be able to rate the game so that I know that my opinion matters.
 
 - As a Piggy Before the Infection Started follower:
 
     - I also want a game that portrays my favourite characters so that I can feel closer to the series.
+
+
+
+
+
 
 
 
