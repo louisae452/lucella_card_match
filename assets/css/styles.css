@@ -14,7 +14,12 @@
 
 }
 
-
+/* Wildcard selector to override default browser styles. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 main{
     background-color: var(--primary-filler-color);
 }
