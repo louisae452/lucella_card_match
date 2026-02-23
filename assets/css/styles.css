@@ -29,6 +29,8 @@ body {
     flex-direction: column;
    
 }
+
+/* Index page*/
 main{
     /*Use all the available space */
     flex: 1 0 auto;
@@ -52,16 +54,24 @@ main{
     margin-top: 5%;
 }
 .button {
-    background-color: var(--button-color);
+    display: flex;
+    background-color: var(--page-margin-color);
     color: var(--button-text-color);
     padding: 10px;
     border-radius: 5px;
     border: none;
     font: var(--secondary-font);
-}
-.level-button {
+    text-decoration: none;
+    height: 40px;
+    width: 80px;
+    justify-content: center;
     margin: 20px;
+
 }
+.button:hover {
+    background-color: var(--button-color);
+}
+
 .hidden {
     display: none;
 }
