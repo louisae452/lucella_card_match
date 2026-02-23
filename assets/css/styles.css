@@ -20,7 +20,16 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Push footer to bottom of page. */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 main{
+    /*Use all the available space */
+    flex: 1 0 auto;
     background-color: var(--primary-filler-color);
 }
 footer {
