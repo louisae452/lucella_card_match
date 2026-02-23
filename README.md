@@ -93,5 +93,7 @@ It will also use the bangers and risque fonts from google fonts.
 ## Credits.
 
 
-To write the readme file: [Markdown Guide: Basic Syntax.](https://www.markdownguide.org/basic-syntax/).
+To write the readme file: [Markdown Guide: Basic Syntax.](https://www.markdownguide.org/basic-syntax/)
+
+To choose image sizes: [Website image size guidelines for 2026.](https://www.shopify.com/blog/image-sizes)
 
