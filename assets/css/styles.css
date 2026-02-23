@@ -1,6 +1,24 @@
-main {
-    background-color: green;
+/* Bangers and Risque fonts (Google fonts)*/
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Risque&display=swap');
+
+/* CSS variables*/
+:root {
+  --primary-font: "Bangers", system-ui;
+  --secondary-font: "Risque", serif;
+  --page-margin-color: #440643;
+  --button-color: #730a71;
+  --primary-filler-color: #fde8fd;
+  --secondary-filler-color: #fef8fe;
+  --button-text-color: #f8fef8;
+  --primary-text-color: #064407;
+
+}
+
+
+main{
+    background-color: var(--primary-filler-color);
 }
 footer {
-    background-color: blue;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
 }
