@@ -78,6 +78,6 @@ main{
 
 
 footer {
-    background-color: var(--button-color);
+    background-color: var(--page-margin-color);
     color: var(--button-text-color);
 }
