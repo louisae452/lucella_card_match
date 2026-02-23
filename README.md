@@ -75,7 +75,7 @@ On clicking on the rate the game, a window will appear so that players can rate 
 
 ## Typography and colour scheme.
 
-As the game will be used to promote the Piggy Before the Infection Started series, it will use the same colour scheme as the series’ webpage. 
+As the game will be used to promote the Piggy Before the Infection Started series, it will use the same colour scheme as the series’ webpage. It will also use the same favicon.
 
 ![Piggy Before The Infection Started series colour pallete](/assets/images/readme_images/colour_pallete.jpg)
 
@@ -94,6 +94,8 @@ It will also use the bangers and risque fonts from google fonts.
 
 
 To write the readme file: [Markdown Guide: Basic Syntax.](https://www.markdownguide.org/basic-syntax/)
+
+To make favicon: [favicon.io](https://favicon.io/).
 
 To choose image sizes: [Website image size guidelines for 2026.](https://www.shopify.com/blog/image-sizes)
 
