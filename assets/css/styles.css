@@ -15,7 +15,7 @@
 }
 
 /* Wildcard selector to override default browser styles. */
-* {
+html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,8 +23,7 @@
 
 /* Push footer to bottom of page. */
 body {
-    
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
    
@@ -77,9 +76,15 @@ main{
     display: none;
 }
 
-/* Game page */
+/* Game pages */
+.game-page {
+    display:flex;    
+    align-content: center;
+    justify-content:  center;
+}
 .card-container {
-    padding: 20%;
+    
+    padding: 10%;
     display: grid;
     grid-template-columns: auto auto auto;
     align-items:center;
