@@ -99,3 +99,5 @@ To make favicon: [favicon.io](https://favicon.io/).
 
 To choose image sizes: [Website image size guidelines for 2026.](https://www.shopify.com/blog/image-sizes)
 
+Flex-box: [Flexbox froggy](https://flexboxfroggy.com/)
+
