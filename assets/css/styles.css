@@ -128,9 +128,7 @@ main{
     background-color:aqua;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
-   
+    align-items: center;      
     position: absolute; /*make both sides sstay in the same position*/
     backface-visibility: hidden; /*hide the back when the front is showing */
     -webkit-backface-visibility: hidden; /*safary support */
@@ -139,12 +137,6 @@ main{
     -o-backface-visibility: hidden; /*opera support */
     
 }
-
-
-
-
-    
-
 
 .card-front {   
     z-index: 2; /*stack at the back*/
