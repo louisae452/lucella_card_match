@@ -81,7 +81,9 @@ As the game will be used to promote the Piggy Before the Infection Started serie
 
 It will also use the bangers and risque fonts from google fonts.
 
+## Testing.
 
+Test log. [Test log](test-log.md)
 
 
 
