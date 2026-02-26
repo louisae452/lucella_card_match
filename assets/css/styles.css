@@ -26,6 +26,8 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    border: 2px solid red; /*DELETE LATER */
+    
    
 }
 
@@ -34,6 +36,7 @@ main{
     /*Use all the available space */
     flex: 1 0 auto;
     background-color: var(--primary-filler-color);
+
     
 }
 /* Title feature */
