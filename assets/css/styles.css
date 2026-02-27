@@ -151,6 +151,11 @@ main{
 .upturned {    
     transform: rotateY(180deg);
 }
+/*get rid of matching cards. */
+.card-match {
+    transition: 2s;
+    opacity: 0;
+}
 
 footer {
     background-color: var(--page-margin-color);

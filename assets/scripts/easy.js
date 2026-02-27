@@ -19,21 +19,15 @@ function setevent() {
 // Function to turn cards on click. (stops after 2 cards have been turned).
 function turncard2(e) {               
     let card = e.currentTarget;                
-    
     card.classList.add("upturned");
-
     number_turns++;
     console.log(number_turns); // DELETE LATER
     // Remove event listener after 2 cards have been turned .            
     if (number_turns == 2) {
         turncard.forEach(turncard => { 
             turncard.removeEventListener("click", turncard2);
-        }); 
-                        
-    
-        check_answer() 
-        
-            
+        });                     
+        check_answer();             
     };
 } 
 
@@ -55,22 +49,26 @@ function check_answer() {
             // Check if cards match.
             if (card1_image === card2_image) {
                 console.log("match");
+                setTimeout(function() {
 
-
-
+                    card1.classList.add("card-match");
+                    card2.classList.add("card-match");
+                    
+                    console.log(card2.classList);
+                },2000);
             } else {
-                console.log(" no match");
-                // Tunrn back upturned class
-                setTimeout(function(){      
-                    card1.classList.remove("upturned");
-                    card2.classList.remove("upturned");
-                }, 2000);
-                // Set event listener back.
-                setevent();
-                // Reset number of upturned cards on board.
-                number_turns = 0;
-                return number_turns;
+                console.log(" no match");     
             }
+            // Turn back upturned class
+            setTimeout(function(){      
+                card1.classList.remove("upturned");
+                card2.classList.remove("upturned");
+            }, 2000);
+            // Set event listener back.
+            setevent();
+            // Reset number of upturned cards on board.
+            number_turns = 0;
+            return number_turns;
 }
 
        
