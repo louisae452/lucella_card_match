@@ -10,3 +10,7 @@
 |27/02/26|Turn two non-matching cards up.|"no match" should be logged to the console.|"no match" is logged to the console.| Pass|Turn cards back if cards do not match. Remove cards if they do.|
 |27/02/26|Turn two un-matched cards. |Cards should turn back round after 2 seconds.| Cards turn round after 2 seconds.|Pass| Set eventlistener back so that a new pair can be turned.|
 |27/02/26|Turn two un-matched cards. Turn another pair of cards after the first one turns back.|It should be possible to turn a second pair of cards.|A second pair of cards is turned on click|Pass|Remove pair of matched cards.|
+|27/02/26|Turn two matching cards.| Matching cards should be removed.| Matching cards are removed.|Pass|Turn the next set of cards.|
+|27/02/26|Turn another pair of cards after matching pair has disappeared.|A pair of cards should turn.|A pair of cards turns.|Pass|Empty the board.|
+|27/02/26|Match all card pairs.|The board should empty.|The board empties.|Pass|Click on an already emptied space.|
+|27/02/26|Click on an already emptied card.|It should be possible to still turn two cards.The two cards should react.|It is possible to turn two cards. Only one card reacts.|Fail.|Get second card to react.|
