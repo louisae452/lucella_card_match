@@ -123,8 +123,8 @@ main{
     height: 100px;
     border: 1px solid black;
     border-radius: 5px;
-    
-   
+    transition: 2s;
+    transform-style: preserve-3d;
 }
     
 .card-back, .card-front {
@@ -145,6 +145,10 @@ main{
     z-index: 2; /*stack at the back*/
 } 
 .card-back {
+    transform: rotateY(180deg);
+}
+/* Turn card around*/
+.upturned {    
     transform: rotateY(180deg);
 }
 
