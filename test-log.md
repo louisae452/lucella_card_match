@@ -13,4 +13,4 @@
 |27/02/26|Turn two matching cards.| Matching cards should be removed.| Matching cards are removed.|Pass|Turn the next set of cards.|
 |27/02/26|Turn another pair of cards after matching pair has disappeared.|A pair of cards should turn.|A pair of cards turns.|Pass|Empty the board.|
 |27/02/26|Match all card pairs.|The board should empty.|The board empties.|Pass|Click on an already emptied space.|
-|27/02/26|Click on an already emptied card.|It should be possible to still turn two cards.The two cards should react.|It is possible to turn two cards. Only one card reacts.|Fail.|Get second card to react.|
+|27/02/26|Click on an already emptied card.|It should be possible to still turn two cards.The two cards should react.|It is not possible to turn two cards. The card reacts according to the emptied card slot.|Fail.|Remove event listener from empty card slot.|

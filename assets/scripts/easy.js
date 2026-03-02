@@ -2,7 +2,6 @@
 let number_turns=0; //Counts how many cards are turned.
 let number_moves=0; // Counts the number of move the player has made. For score.
 let turncard = document.querySelectorAll(".card-inner");
-
 document.addEventListener("DOMContentLoaded", function() {
 
     ////Event listenter to turn card back on click. 
@@ -49,13 +48,16 @@ function check_answer() {
             // Check if cards match.
             if (card1_image === card2_image) {
                 console.log("match");
-                setTimeout(function() {
-
+                //Remove cards form board.
+                setTimeout(function() {    
                     card1.classList.add("card-match");
-                    card2.classList.add("card-match");
-                    
-                    console.log(card2.classList);
+                    card2.classList.add("card-match");     
+                    console.log(card2.classList);    
                 },2000);
+                // remove cards from nodelist.
+                setTimeout(function() {
+                    remove_cards(card1, card2);  
+                },3000);
             } else {
                 console.log(" no match");     
             }
@@ -63,12 +65,23 @@ function check_answer() {
             setTimeout(function(){      
                 card1.classList.remove("upturned");
                 card2.classList.remove("upturned");
-            }, 2000);
+            }, 1000);
             // Set event listener back.
-            setevent();
+            setTimeout(function(){
+                setevent();
+            }, 4000);
             // Reset number of upturned cards on board.
             number_turns = 0;
-            return number_turns;
+            return number_turns; 
+
+}
+//Function to remove matching cards from nodelist.
+function remove_cards(card1, card2) {
+    card1.classList.remove("card-inner");
+    card2.classList.remove("card-inner");
+    turncard= document.querySelectorAll(".card-inner");
+    console.log(turncard);
+    return turncard;
 }
 
        
