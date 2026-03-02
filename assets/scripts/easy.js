@@ -32,7 +32,9 @@ function turncard2(e) {
         turncard.forEach(turncard => { 
             turncard.removeEventListener("click", turncard2);
         });                     
-        check_answer();             
+        check_answer();  
+        number_moves++;
+        console.log(number_moves); //Add to counter element in html.           
     };
 } 
 
