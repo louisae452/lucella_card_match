@@ -14,3 +14,5 @@
 |27/02/26|Turn another pair of cards after matching pair has disappeared.|A pair of cards should turn.|A pair of cards turns.|Pass|Empty the board.|
 |27/02/26|Match all card pairs.|The board should empty.|The board empties.|Pass|Click on an already emptied space.|
 |27/02/26|Click on an already emptied card.|It should be possible to still turn two cards.The two cards should react.|It is not possible to turn two cards. The card reacts according to the emptied card slot.|Fail.|Remove event listener from empty card slot.|
+|02/03/26|Click on an already emptied card.|The empty slot should not react. It should still be possible to turn two cards.|The empthy slot does not react. Two new cards can be upturned.|Pass|Click on the same card twice.|
+|02/03/26|Click on the same card twice.|The second card should not affect the game.| The second click crashes the game.| Fail|Stop the game being affected by the second click.|
