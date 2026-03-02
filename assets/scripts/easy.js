@@ -93,7 +93,7 @@ function remove_cards(card1, card2) {
     console.log(cards_left);
     if (cards_left == 0) {
         console.log(`Congratulations! You cleared the board in ${number_moves} moves.`);
-    };
+    }; // Turn into html element.
     return turncard;
 }
 
