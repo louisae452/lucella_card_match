@@ -89,6 +89,11 @@ function remove_cards(card1, card2) {
     card2.classList.remove("card-inner");
     turncard= document.querySelectorAll(".card-inner");
     console.log(turncard);
+    let cards_left = turncard.length;
+    console.log(cards_left);
+    if (cards_left == 0) {
+        console.log(`Congratulations! You cleared the board in ${number_moves} moves.`);
+    };
     return turncard;
 }
 
