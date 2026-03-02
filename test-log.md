@@ -17,3 +17,5 @@
 |02/03/26|Click on an already emptied card.|The empty slot should not react. It should still be possible to turn two cards.|The empthy slot does not react. Two new cards can be upturned.|Pass|Click on the same card twice.|
 |02/03/26|Click on the same card twice.|The second card should not affect the game.| The second click crashes the game.| Fail|Stop the game being affected by the second click.|
 |02/03/26|Click on the same card twice.|The second click should not crash the game.|the second click sends a message to the console.It is possible to click a second card.|Pass|Count number of moves taken.|
+|02/03/16|Play the game.|Each time a pair of cards is turned, the number of moves should increase by one.|The number of moves logged onto the console increases by one each time a pair of cards is played.|Create element to display number of moves.|
+| |Element displays number of moves|
