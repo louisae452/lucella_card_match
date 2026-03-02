@@ -17,10 +17,16 @@ function setevent() {
    
 // Function to turn cards on click. (stops after 2 cards have been turned).
 function turncard2(e) {               
-    let card = e.currentTarget;                
+    let card = e.currentTarget;
+    if (card.classList.contains("upturned")) {
+        console.log("already used");//Add alert message (quick animatios oops?)
+    } else {                 
     card.classList.add("upturned");
+
     number_turns++;
     console.log(number_turns); // DELETE LATER
+    };
+
     // Remove event listener after 2 cards have been turned .            
     if (number_turns == 2) {
         turncard.forEach(turncard => { 
