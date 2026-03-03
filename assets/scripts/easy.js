@@ -1,10 +1,20 @@
 // Wait for document to load befor running the script.
 let number_turns=0; //Counts how many cards are turned.
 let number_moves=0; // Counts the number of move the player has made. For score.
-let turncard = document.querySelectorAll(".card-inner");
-document.addEventListener("DOMContentLoaded", function() {
+// Array of available cards.
+const available_cards = ["billy.webp", "boris.webp","boris_superman.webp", "clowny.webp", "detective_zebra.webp", "elvis.webp", "felix.webp", "foxy.webp", "georgie.webp", "kristy.webp", "military_leader.webp", "monty.webp", "monty_space.webp", "p199y.webp", "parasee_draw.webp", "parasee_incognito.webp", "penny.webp", "penny_cardboard.webp", "penny_minnie.webp", "penny_summer.webp", "pony.webp", "superjakejosecat.webp", "superluisacat.webp", "tigry.webp","troll.webp"];
+// Array of available positions.
+const available_positions = ["image-1e", "image-2e", "image-3e", "image-4e", "image-5e", "image-6e", "image-7e", "image-8e", "image-9e", "image-10e", "image-11e", "image-12e"];
 
-    ////Event listenter to turn card back on click. 
+let turncard = document.querySelectorAll(".card-inner");
+
+document.addEventListener("DOMContentLoaded", function() {
+    
+
+    populate_board();
+
+
+    //Event listenter to turn card back on click. 
     setevent();
                   
 });
@@ -100,7 +110,30 @@ function remove_cards(card1, card2) {
     return turncard;
 }
 
-       
+
+//Function to populate board with random card-pairs in random positions.
+function populate_board() {
+    
+    // Choose a random card (6 times).
+    for (let i=0; i<6; i++) {
+            let random_card_index = Math.floor(Math.random() *(available_cards.length - 1));
+            console.log(random_card_index);
+            //Choose a random position (2 times)
+            for (let n=0; n<2; n++) {
+                let random_position_index = Math.floor(Math.random() * (available_positions.length -1));
+                console.log(random_position_index);
+                // Get position of card by id
+                let position_chosen = document.getElementById(available_positions[random_position_index]);
+                // set position's image
+                position_chosen.setAttribute("src", `assets/images/cards/${available_cards[random_card_index]}`);
+                console.log(position_chosen);
+                // Remove position from available_positions.
+                available_positions.splice(random_position_index, 1);
+        };
+        //Remove card from available_cards.
+        available_cards.splice(random_card_index, 1);
+    };
+}   
 
 
     

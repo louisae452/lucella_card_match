@@ -23,15 +23,16 @@ html, body {
 
 @keyframes congrat-message {
     0% {opacity: 0;}
-    25% {opacity: 0.25;}
+    /*25% {opacity: 0.25;}
     50% {opacity: 0.5;}
-    75% {opacity: 0.75;}
+    75% {opacity: 0.75;}*/
     100% {opacity: 1;}
 
 }
 /* Push footer to bottom of page. */
 body {
-    height: 100vh;
+    height: 100dvh;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     border: 2px solid red; /*DELETE LATER */   
@@ -181,7 +182,7 @@ main{
     font-family: var(--primary-font);
     font-size: 5em;   
     animation-name: congrat-message;
-    animation-duration: 10s;
+    animation-duration: 5s;
 }
 
 footer {
