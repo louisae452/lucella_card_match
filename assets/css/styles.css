@@ -21,23 +21,27 @@ html, body {
     box-sizing: border-box;
 }
 
+@keyframes congrat-message {
+    0% {opacity: 0;}
+    25% {opacity: 0.25;}
+    50% {opacity: 0.5;}
+    75% {opacity: 0.75;}
+    100% {opacity: 1;}
+
+}
 /* Push footer to bottom of page. */
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    border: 2px solid red; /*DELETE LATER */
-    
-   
+    border: 2px solid red; /*DELETE LATER */   
 }
 
 /* Index page*/
 main{
     /*Use all the available space */
     flex: 1 0 auto;
-    background-color: var(--primary-filler-color);
-
-    
+    background-color: var(--primary-filler-color);   
 }
 /* Title feature */
 #title-feature {
@@ -76,24 +80,28 @@ main{
     background-color: var(--button-color);
 }
 
-.hidden {
-    display: none;
-}
 
 /* Game pages */
+
+.outer {
+    display: grid;
+    position: absolute;
+    width: 100vw;
+}
+
 .game-page {
     display:flex;    
     align-content: center;
-    justify-content:  center;
+    justify-content:  center;   
+    place-self:center;        
 }
+
 .card-container {
-    
     padding: 10%;
     display: grid;
     grid-template-columns: auto auto auto;
     align-items:center;
     justify-content: center;
-    
 }
 .card {
    display: flex;
@@ -103,15 +111,13 @@ main{
     height: 100px;
     margin: 10px;
     background-color: transparent;
-    border: 1px solid black; /*DELETE LATER */
-    border-radius: 5px; /*DELETE LATER */
-    perspective: 1000px; /*keep the 3d effect*/
-    
+    perspective: 1000px; /*keep the 3d effect*/  
 }
 
 .card img {
     
     width: 80%;
+    border-radius: 5px;
    
 }
 .card-inner {
@@ -138,7 +144,6 @@ main{
     -moz-backface-visibility: hidden; /*firefox support */
     -ms-backface-visibility: hidden; /*IE support */
     -o-backface-visibility: hidden; /*opera support */
-    
 }
 
 .card-front {   
@@ -157,9 +162,35 @@ main{
     opacity: 0;
 }
 
+/*End of game message*/
+.congratulations-message {  
+   display:grid;
+    width: 80%;
+    height: 200px;
+    background-color: transparent;
+    color: #064407;
+    /*animation-name: congrat-message;
+    animation-duration: 10s;*/
+    place-self: center;
+    position: absolute;
+}
+#message{
+    display: grid;
+    text-align: center;
+    align-items: center;
+    font-family: var(--primary-font);
+    font-size: 5em;   
+    animation-name: congrat-message;
+    animation-duration: 10s;
+}
+
 footer {
     background-color: var(--page-margin-color);
     color: var(--button-text-color);
+}
+/*Moved down to override display properties of hidden elements*/
+.hidden {
+    display: none;
 }
 
 /* Media queries */

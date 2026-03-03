@@ -92,8 +92,11 @@ function remove_cards(card1, card2) {
     let cards_left = turncard.length;
     console.log(cards_left);
     if (cards_left == 0) {
-        console.log(`Congratulations! You cleared the board in ${number_moves} moves.`);
-    }; // Turn into html element.
+        let congrat_message_box = document.getElementById("congratulations");
+        congrat_message_box.classList.remove("hidden");
+        let congrat_message = document.getElementById("message");
+        congrat_message.innerText =`CONGRATULATIONS! YOU CLEARED THE BOARD IN ${number_moves} MOVES!`;
+    };
     return turncard;
 }
 
