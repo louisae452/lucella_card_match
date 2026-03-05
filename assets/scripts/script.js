@@ -5,7 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log(start);
     let level_button = document.getElementById("choose-level");
     start.addEventListener("click", function() {
-        level_button.classList.remove("hidden");       
+        level_button.classList.remove("hidden");  
+    
     });
     
 
