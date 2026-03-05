@@ -4,7 +4,7 @@ let number_moves=0; // Counts the number of move the player has made. For score.
 // Array of available cards.
 const available_cards = ["billy.webp", "boris.webp","boris_superman.webp", "clowny.webp", "detective_zebra.webp", "elvis.webp", "felix.webp", "foxy.webp", "georgie.webp", "kristy.webp", "military_leader.webp", "monty.webp", "monty_space.webp", "p199y.webp", "parasee_draw.webp", "parasee_incognito.webp", "penny.webp", "penny_cardboard.webp", "penny_minnie.webp", "penny_summer.webp", "pony.webp", "superjakejosecat.webp", "superluisacat.webp", "tigry.webp","troll.webp"];
 // Array of available positions.
-const total_available_positions = ["image-1e", "image-2e", "image-3e", "image-4e", "image-5e", "image-6e", "image-7e", "image-8e", "image-9e", "image-10e", "image-11e", "image-12e", "image-13e", "image-14e", "image-15e", "image-16e"];
+const total_available_positions = ["image-1e", "image-2e", "image-3e", "image-4e", "image-5e", "image-6e", "image-7e", "image-8e", "image-9e", "image-10e", "image-11e", "image-12e", "image-13e", "image-14e", "image-15e", "image-16e", "image-17e", "image-18e", "image-19e", "image-20e"];
 
 let turncard = document.querySelectorAll(".card-inner");
 console.log("turncard length" + turncard.length);
@@ -14,6 +14,16 @@ document.addEventListener("DOMContentLoaded", function() {
     populate_board();
     //Event listenter to turn card back on click. 
     setevent();
+    //Event listener to reset the game.
+    let reset = document.getElementById("reset-button");
+    reset.addEventListener("click", function(){
+        reset_cards();
+        reset_number_turns();
+        reset_number_moves();
+        populate_board();
+        setevent();
+    });
+    
                   
 });
 // Function to set eventlistener to turn cards round when clicked.
@@ -73,7 +83,7 @@ function check_answer() {
                 // remove cards from nodelist.
                 setTimeout(function() {
                     remove_cards(card1, card2);  
-                },3000);
+                },1000);
             } else {
                 console.log(" no match");     
             }
@@ -81,11 +91,11 @@ function check_answer() {
             setTimeout(function(){      
                 card1.classList.remove("upturned");
                 card2.classList.remove("upturned");
-            }, 1000);
+            }, 2000);
             // Set event listener back.
             setTimeout(function(){
                 setevent();
-            }, 500);
+            }, 2000);
             // Reset number of upturned cards on board.
             number_turns = 0;
             return number_turns; 
@@ -136,7 +146,28 @@ function populate_board() {
         //Remove card from available_cards.
         available_cards.splice(random_card_index, 1);
     };
-}   
+} 
 
+// Function to reset the cards:
+function reset_cards() {
+    let cards_to_reset = document.querySelectorAll(".card-reset");
+    console.log(cards_to_reset);
+    cards_to_reset.forEach(cards_to_reset => {
+        cards_to_reset.classList.add("card-inner");
+        cards_to_reset.classList.remove("card-match");
+        cards_to_reset.classList.remove("upturned");
+    });
+    console.log(cards_to_reset);
+}
+// Function to reset the number of turns.
+function reset_number_turns() {
+    number_turns = 0;
+    return number_turns;
+}
+// Function to reset the number of moves.
+function reset_number_moves() {
+    number_moves = 0;
+    return number_moves;
+}
 
     
