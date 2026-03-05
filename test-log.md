@@ -1,6 +1,6 @@
 # Lucella card match test log.
 
-## Page: easy.html
+## Functionality.
 
 |Date tested |Test | Expected result | Result | Pass/Fail |Next|
 |:---- |:----|:----|:----|:----:|:----|
@@ -21,3 +21,17 @@
 | |Element displays number of moves| | | |
 |02/03/26|The game logs a congratulations message when the board is cleared.|Play the game. When the board is emptied, a congratulations message should be logged onto the conlole.|A Congratulations message is logged onto the console.|Pass|Create element to display congratulations message. Populate the board with random cards.| 
 |02/03/26| Congratulations message appears when board is cleared.|Play the game. When the board is cleared, a congratulations message with the number of moves used should appear.|A congratulations message with the number of moves used appears when the board is cleared.|Pass|Populate the board with random cards.|
+|03/03/26| The game gets populated with random card-pairs.|Play the game. The game should be populated by a set of six card-pairs in random positions.|The game gets populated by 6 random pairs of cards. All images appear at some point.|Pass|Set medium level page. Set hard level page.|
+|05/03/26|The medium level game plays correctly.|Play the medium game. The board should be populated by 8 random pairs of cards. It should be possible to clear the board. A congratulations message appears.|The board is populated by 8 random pairs of cards. It is possible to clear the board. A congratulations message appears.|Pass|Set hard level game.|
+|05/03/26|The hard game plays correctly.|Play the hard game. The board should be populated by 10 random pairs of cards in random positions. It should be possible to clear the board. A Congratulations message should appear.|The board is populated by 10 pairs of cards in random positions. It is possible to clear the board. A congratulations message appears.|Pass|Set reset button.|
+|05/03/26|The reset button works (easy level).|Play the game easy level. Half way through the game, press the reset button. The board should get populated again.|The reset button re-populates the board when in the middle of the easy game.|Pass|Set reset button in medium level.|
+|05/03/26|The reset button works (medium level).|Play the game medium level. Half way through the game, press the reset button. The board should get populated again.|The reset button re-populates the board when in the middle of the medium game.|Pass|Set the reset button in the hard level.|
+|05/03/26|The reset button works (hard level).|Play the game hard level. Half way through the game, press the hard game. The board should get populated again.|The reset button re-populates the board when in the middle of the hard game.|Pass|Add the moves counter to the screen.|
+
+
+
+
+## User experience.
+|Date|Poblem|Solution|
+|:----|:----|:----|
+|05/03/26. |After a pair of exposed cards has been dealt with, it takes too long to be able to turn the next card on the board. That can be frustated.|The time function to get reset the eventListener was adjusted.|
