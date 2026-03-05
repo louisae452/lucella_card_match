@@ -85,7 +85,7 @@ function check_answer() {
             // Set event listener back.
             setTimeout(function(){
                 setevent();
-            }, 4000);
+            }, 500);
             // Reset number of upturned cards on board.
             number_turns = 0;
             return number_turns; 
