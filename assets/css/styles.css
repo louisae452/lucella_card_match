@@ -86,8 +86,9 @@ main{
 
 .outer {
     display: grid;
-    position: absolute;
-    width: 100vw;
+    position: relative;
+    /*width: 100vw;*/
+    height: 80%;
 }
 
 .game-page {
