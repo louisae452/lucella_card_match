@@ -80,6 +80,9 @@ main{
 .button:hover {
     background-color: var(--button-color);
 }
+.hidden-there {
+    visibility: hidden;
+}
 
 
 /* Game pages */
@@ -201,6 +204,7 @@ footer {
 }
 
 /* Media queries */
+
 @media screen and (min-width: 600px) {
     .card-container {
         grid-template-columns: auto auto auto auto;

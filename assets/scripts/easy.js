@@ -137,6 +137,7 @@ function populate_board() {
                 console.log(random_position_index);
                 // Get position of card by id
                 let position_chosen = document.getElementById(available_positions[random_position_index]);
+                console.log(position_chosen);
                 // set position's image
                 position_chosen.setAttribute("src", `assets/images/cards/${available_cards[random_card_index]}`);
                 console.log(position_chosen);
