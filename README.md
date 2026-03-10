@@ -103,3 +103,5 @@ To choose image sizes: [Website image size guidelines for 2026.](https://www.sho
 
 Flex-box: [Flexbox froggy](https://flexboxfroggy.com/)
 
+To handle orientation : [orientation](https://www.slingacademy.com/article/enhance-mobile-uis-by-checking-orientation-in-javascript/)
+

@@ -1,4 +1,4 @@
-// Wait for document to load befor running the script.
+
 let number_turns=0; //Counts how many cards are turned.
 let number_moves=0; // Counts the number of move the player has made. For score.
 // Array of available cards.
@@ -8,8 +8,11 @@ const total_available_positions = ["image-1e", "image-2e", "image-3e", "image-4e
 
 let turncard = document.querySelectorAll(".card-inner");
 console.log("turncard length" + turncard.length);
-
+// Wait for document to load before running the script.
 document.addEventListener("DOMContentLoaded", function() {
+    
+
+
     // Populate the board.
     populate_board();
     //Event listenter to turn card back on click. 
