@@ -5,12 +5,13 @@
 :root {
   --primary-font: "Bangers", system-ui;
   --secondary-font: "Risque", serif;
-  --page-margin-color: #440643;
-  --button-color: #730a71;
-  --primary-filler-color: #fde8fd;
-  --secondary-filler-color: #fef8fe;
-  --button-text-color: #f8fef8;
-  --primary-text-color: #064407;
+  --dark-purple: #440643;
+  --purple: #730a71;
+  --pink: #fde8fd;
+  --barely-there-pink: #fef8fe;
+  --barely-there-green: #f8fef8;
+  --mid-green: #dffce0;
+  --forest-green: #064407;
 
 }
 
@@ -42,7 +43,7 @@ body {
 main{
     /*Use all the available space */
     flex: 1 0 auto;
-    background-color: var(--primary-filler-color);   
+    background-color: var(--pink);   
 }
 /* Title feature */
 #title-feature {
@@ -53,8 +54,8 @@ main{
     justify-content: center;
     align-items: center;
     margin-top: 5%;   
-    background-color: var(--button-color);
-    color: var(--button-text-color);
+    background-color: var(--purple);
+    color: var(--purple);
 }
 .button-container {
     display: flex;
@@ -63,8 +64,8 @@ main{
 }
 .button {
     display: flex;
-    background-color: var(--page-margin-color);
-    color: var(--button-text-color);
+    background-color: var(--purple);
+    color: var(--barely-there-pink);
     padding: 10px;
     border-radius: 5px;
     border: none;
@@ -78,7 +79,7 @@ main{
 
 }
 .button:hover {
-    background-color: var(--button-color);
+    background-color: var(--dark-purple);
 }
 .hidden-there {
     visibility: hidden;
@@ -139,7 +140,7 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:aqua;
+    background-color: var(--mid-green);
     width: 80px;
     height: 100px; 
     border: 1px solid black;
@@ -149,7 +150,7 @@ i {
 }
     
 .card-back, .card-front {
-    background-color:aqua;
+    background-color: var(--mid-green);
     display: flex;
     justify-content: center;
     align-items: center;      
@@ -176,6 +177,24 @@ i {
     transition: 2s;
     opacity: 0;
 }
+/* turn around message*/
+.turn-message {
+    display: grid;
+    place-self: center;
+    position: absolute;
+    z-index: 3;
+    min-width: 80%;
+    height: 80%;
+    background-color: var(--mid-green);
+    color: var(--forest-green);
+    font-family: var(--primary-font);
+    align-items: center;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+}
 
 /*End of game message*/
 .congratulations-message {  
@@ -200,8 +219,8 @@ i {
 }
 
 footer {
-    background-color: var(--page-margin-color);
-    color: var(--button-text-color);
+    background-color: var(--dark-purple);
+    color: var(--barely-there-pink);
 }
 /*Moved down to override display properties of hidden elements*/
 .hidden {
@@ -211,6 +230,16 @@ footer {
 /* Media queries */
 
 /* Deal with small devices in landscape */
+@media screen and (max-width: 576px) {
+    .turn-message {
+        visibility: visible;
+    }
+}
+@media screen and (min-width: 576px) {
+    .turn-message {
+        visibility: hidden;
+    }
+}
 @media screen and (orientation: landscape) and (max-width: 992px) {
     #card-container-easy {
         grid-template-columns: auto auto auto auto auto auto;
@@ -231,7 +260,7 @@ footer {
         height: 87px;
     }}
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
     .card-container {
         grid-template-columns: auto auto auto auto;
     }
