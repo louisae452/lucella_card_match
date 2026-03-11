@@ -35,3 +35,9 @@
 |Date|Poblem|Solution|
 |:----|:----|:----|
 |05/03/26. |After a pair of exposed cards has been dealt with, it takes too long to be able to turn the next card on the board. That can be frustated.|The time function to get reset the eventListener was adjusted.|
+
+## Responsiveness.
+|Date|Feature|Expected result|Result|Pass/fail|
+|:---|:-----|:----|:----|:----|
+|11/03/26|Display on small devices changes to fit all cards on screen when device is rotated.|Switch small devices between portrait and landscape orientation in each of the levels. The disposition of the cards on the board should change so they fit evenly on the screen.|The position of the cards changes depending on whether the small device is used in portrait or landscape orientation.|Pass|
+|11/03/26|Message to rotate the device appears on small devices asking to rotate device in medium and hard levels.|Start game in medium and hard levels in small devices in portrait orientation. A message to rotate the device should appear. The message should disappear when the device is rotated landscape.|A message appears when medium and hard levels are played in portrait on small devices. The message disappears when the device is rotated. It appears again when the device is rotated back to portrait.S|Pass|
