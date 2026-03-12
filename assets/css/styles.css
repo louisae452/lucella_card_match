@@ -200,7 +200,7 @@ i {
 .congratulations-message {  
    display:grid;
     width: 80%;
-    height: 200px;
+    height: 80%px;
     background-color: transparent;
     color: #064407;
     /*animation-name: congrat-message;
