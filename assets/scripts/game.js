@@ -26,6 +26,39 @@ document.addEventListener("DOMContentLoaded", function() {
         populate_board();
         setevent();
     });
+    //Event listener to rate the game.
+    let show_rate_box= document.getElementById("rate-button");
+    show_rate_box.addEventListener("click", function() {
+        console.log("clicked");
+        let rate_box= document.getElementById("rate-box");
+        rate_box.style.visibility= "visible";
+        rate_game();
+        //Submit rating
+        let thankyou = document.getElementById("thankyou-box");
+        let submit_button = document.getElementById("submit-button");
+        submit_button.addEventListener("click", function(){
+            let stars = document.querySelectorAll(".dark-star");
+            if (stars.length > 0) {
+                
+                thankyou.style.visibility = "visible";
+                rate_box.style.visibility = "hidden";
+            }
+        });
+        // Exit rate box.
+        let exit_button_1 = document.getElementById("exit-button-1");
+        exit_button_1.addEventListener("click", function() {
+            reset_stars();
+            rate_box.style.visibility = "hidden";
+        });
+        // Exit thank you box.
+        let exit_button_2 = document.getElementById("exit-button-2");
+        exit_button_2.addEventListener("click", function() {
+            reset_stars();
+            thankyou.style.visibility = "hidden";
+        });
+
+        
+    });
     
                   
 });
@@ -173,5 +206,52 @@ function reset_number_moves() {
     number_moves = 0;
     return number_moves;
 }
-
+// Function to rate the game.
+function rate_game() {  
+    let button_one = document.getElementById("rate-button-1");
+    let button_two = document.getElementById("rate-button-2");
+    let button_three = document.getElementById("rate-button-3");
+    let button_four = document.getElementById("rate-button-4");
+    let button_five = document.getElementById("rate-button-5");
+    //Event listener to rate 1 star.
+    button_one.addEventListener("click",function(){
+        button_one.classList.add("dark-star");
+    });
+    //Event listener to rate 2 stars.
+    button_two.addEventListener("click", function(){
+        button_one.classList.add("dark-star");
+        button_two.classList.add("dark-star");
+    });
+    // Event listener to rate 3 stars.    
+    button_three.addEventListener("click", function() { 
+       button_one.classList.add("dark-star");
+       button_two.classList.add("dark-star");
+       button_three.classList.add("dark-star");
+    });
+    //Event listener to rate 4 stars.
+    button_four.addEventListener("click", function(){
+       button_one.classList.add("dark-star");
+       button_two.classList.add("dark-star");
+       button_three.classList.add("dark-star");
+       button_four.classList.add("dark-star");
+    });
+    //Event listener to rate stars.
+    button_five.addEventListener("click", function(){
+       button_one.classList.add("dark-star");
+       button_two.classList.add("dark-star");
+       button_three.classList.add("dark-star");
+       button_four.classList.add("dark-star");
+       button_five.classList.add("dark-star");
+    });
+}
+//Function to reset the stars.
+function reset_stars() {
     
+    let stars = document.querySelectorAll(".menu-button");
+    stars.forEach(stars => {
+
+   
+    stars.classList.remove("dark-star");
+    });
+    
+}

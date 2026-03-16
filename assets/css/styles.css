@@ -155,6 +155,7 @@ main{
 
 }
 
+
 .button:hover {
     background-color: var(--dark-purple);
 }
@@ -164,10 +165,79 @@ main{
 
 
 /* Game pages */
+header {
+    padding: 20px;
+}
 /* Size of icons. */
 i {
     font-size: 2em;
+    color: var(--purple);
+    background-color: var(--pink);
+    
 }
+/*
+#reset-button {
+    padding: 0px;
+    border: none;
+}*/
+.menu-button {
+    margin: 10px;
+    padding: 0px;
+    border: none;
+    background-color:var(--mid-green);
+}
+/*Rate box styling */
+#rate-box, #thankyou-box {
+    display: inline;
+    /*z-index: 4;*/
+    width: 30%;
+    height: 40%;
+    /*border: 1px solid red;*/
+    border-radius: 10px;
+    position: absolute;
+    margin-left: 10%;
+    visibility: hidden;
+    background-color: var(--mid-green);
+}
+#rate-box {
+    z-index: 6;
+}
+#thankyou-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+    
+}
+#rate-box p {
+    font-family: var(--secondary-font);
+}
+#thankyou-box h1 {
+    font-family: var(--primary-font);
+}
+#rate-box .menu-button {
+    margin: 0px;
+}
+#rate-box .menu-button i{
+   
+    color: rgb(202, 199, 199);
+    background-color:var(--mid-green);
+}
+#rate-box .dark-star i{
+    color: var(--forest-green);
+}
+.submit-buttons {
+    display: flex;
+    justify-content: center;
+}
+.exit-button {
+    background-color: var(--forest-green);
+    color: var(--mid-green);
+    /*font-family: var(--secondary-font);*/
+
+}
+
 /*
 .outer-grid {
     display: grid;
@@ -177,8 +247,6 @@ i {
 .outer {
     display: grid;
     position: relative;
-    /*width: 100vw;*/
-    height: 60%;
     padding-top: 5px;
 
 } 
