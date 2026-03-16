@@ -55,11 +55,25 @@ document.addEventListener("DOMContentLoaded", function() {
         exit_button_2.addEventListener("click", function() {
             reset_stars();
             thankyou.style.visibility = "hidden";
-        });
+        });     
+    });
+    //Event listener to show instructions.
+    let show_instructions = document.getElementById("info-button");
+    console.log(show_instructions);
+    let info_box= document.getElementById("info-box");
+    show_instructions.addEventListener("click", function() {
+        
+        console.log(info_box);
+        info_box.style.visibility= "visible";
+    });
+    //Exit instructions.
+    let exit_button_3 = document.getElementById("exit-button-3");
+        exit_button_3.addEventListener("click", function() {
+            
+            info_box.style.visibility = "hidden";
+        });     
 
         
-    });
-    
                   
 });
 // Function to set eventlistener to turn cards round when clicked.
