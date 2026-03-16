@@ -340,12 +340,12 @@ footer a {
     }
     #card-container-hard .card {
         margin: 5px;
-        width: 70px;
-        height: 87px;
+        width: 60px;
+        height: 75px;
     }
     #card-container-hard .card-inner {
-        width: 70px;
-        height: 87px;
+        width: 60px;
+        height: 75px;
     }}
 
 @media screen and (min-width: 576px) {
