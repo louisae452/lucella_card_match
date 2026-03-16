@@ -39,7 +39,7 @@ body {
     display: flex;
     flex-direction: column;
     border: 2px solid red; /*DELETE LATER */  
-    flex-wrap: wrap;
+    
     
 }
 
@@ -64,29 +64,20 @@ main{
     padding: 30px;
     display: flex;
 }
-/*#title-feature {
-    display: flex; 
-    
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5%;   
-    background-color: var(--purple);
-    
-}*/
+
 /*Title feature added*/
 @keyframes titleAnimation {
     from {color: transparent;
     visibility: hidden;
     font-family: var(--title-font);
     opacity: 0%;
-}
-    to {color: green;
+    }
+    to {color: var(--forest-green);
     visibility: visible;
     font-family: var(--title-font);
     opacity: 100%;
 
-}
+    }
 }
 .test {
     display: flex;
@@ -102,7 +93,7 @@ main{
     
     font-family: var(--title-font);
     font-weight: 4000;
-    color: green;
+    color: var(--forest-green);
     font-size: 3em;
     margin: 0px;
     /*transform: rotate(-20deg);*/
@@ -113,7 +104,7 @@ main{
     
     font-family: var(--title-font);
     font-size: 1em;
-    color: green;
+    color: var(--forest-green);
     transform: rotate(-20deg);
     margin: 0px;
     animation-name: titleAnimation;
