@@ -55,6 +55,11 @@ main{
     justify-self:center;
     
 }
+#page-container {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    height: 100%;
+}
 /* Title feature */
 .title {
     align-self:center;
@@ -65,7 +70,7 @@ main{
     display: flex;
 }
 
-/*Title feature added*/
+/*Title feature*/
 @keyframes titleAnimation {
     from {color: transparent;
     visibility: hidden;
@@ -79,15 +84,13 @@ main{
 
     }
 }
-.test {
+.title-feature {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
     height: 100%;
     flex-shrink: 1;
-    
-
 }
 #title1 {
     
@@ -111,17 +114,11 @@ main{
     animation-duration: 10s;
    
 }
-.test-image {
+.title-image {
     height: 30%;
-    width: 30%;
-    
-   
-    /*align-self: flex-end;*/
+    width: 60%;
     z-index: 3;
-    
-    flex-shrink: 1;
-    
-
+    flex-shrink: 1; 
 }
 #title-image {
    animation-name: titleAnimation;
@@ -154,13 +151,23 @@ main{
     z-index: 5;
 
 }
-
-
 .button:hover {
     background-color: var(--dark-purple);
 }
 .hidden-there {
     visibility: hidden;
+}
+/*Home page pictures*/
+.picture-home {
+    height: 100%;
+    width: 20%px;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    
+    
+}
+.align-bottom {
+    align-self: end;
 }
 
 
@@ -199,6 +206,7 @@ i {
     visibility: hidden;
     background-color: var(--mid-green);
 }
+/*Instructions box styling*/
 #info-box {
     border: 1px solid red;
     min-width: 30%;
@@ -213,7 +221,10 @@ i {
     flex-direction: column;
     border-radius: 10px;
     visibility: hidden;
-
+}
+#info-box  li {
+    font-family: var(--secondary-font);
+    color: var(--forest-green);
 
 }
 #rate-box {
@@ -403,6 +414,12 @@ footer a {
 
 /* Deal with small devices in landscape */
 @media screen and (max-width: 576px) {
+    #page-container {
+        display: block;
+    }
+    .picture-home {
+        display: none;
+    }
     .turn-message {
         visibility: visible;
     }
@@ -436,6 +453,10 @@ footer a {
         width: 60px;
         height: 75px;
     }}
+    #info-box {
+        margin-left: 30%;
+    }
+    
 
 @media screen and (min-width: 576px) {
     
