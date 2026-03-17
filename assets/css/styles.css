@@ -104,7 +104,8 @@ main{
     animation-duration: 8s;
 }
 #title2 {
-    
+    display: relative;
+    z-index: 3;
     font-family: var(--title-font);
     font-size: 1em;
     color: var(--forest-green);
@@ -117,7 +118,7 @@ main{
 .title-image {
     height: 30%;
     width: 60%;
-    z-index: 3;
+    z-index: 2;
     flex-shrink: 1; 
 }
 #title-image {
@@ -169,7 +170,10 @@ main{
 .align-bottom {
     align-self: end;
 }
-
+#img-bottom-4 {
+    position: relative;
+    z-index: 3;
+}
 
 /* Game pages */
 header {
@@ -444,18 +448,19 @@ footer a {
     #card-container-hard {
         grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
     }
-    #card-container-hard .card {
+    #card-container-hard .card, #card-container-medium .card {
         margin: 5px;
         width: 60px;
         height: 75px;
     }
-    #card-container-hard .card-inner {
+    #card-container-hard .card-inner, #card-container-medium .card-inner {
         width: 60px;
         height: 75px;
     }}
     #info-box {
         margin-left: 30%;
     }
+    
     
 
 @media screen and (min-width: 576px) {
