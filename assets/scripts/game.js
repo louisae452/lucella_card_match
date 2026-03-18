@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", function() {
         reset_number_turns();
         reset_number_moves();
         populate_board();
+        //Get rid of congratulations message.
+        let congrat_message_box = document.getElementById("congratulations");
+        congrat_message_box.classList.add("hidden");
         setevent();
     });
     //Event listener to rate the game.
@@ -83,6 +86,7 @@ function turncard2(e) {
         number_moves++;
     }
 }
+//Functon added instead of forEach as suggested by JsLint.
 function cardreset(turncard) {
     turncard.removeEventListener("click", turncard2);
 }
