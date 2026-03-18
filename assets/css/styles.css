@@ -380,13 +380,21 @@ footer a {
     .picture-home {
         display: none;
     }
+    #features-container {
+        max-width: 80%;
+    }
     .turn-message {
         visibility: visible;
     }
     #info-box {
         margin-left: 10%;
     }
+    /*Smaller lettering for congratulations message*/
+    #message {
+        font-size: 3em;
+    }
 }
+ 
 
 @media screen and (min-width: 576px) {
     .turn-message {
