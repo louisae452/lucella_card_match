@@ -81,6 +81,52 @@ As the game will be used to promote the Piggy Before the Infection Started serie
 
 It will also use the bangers and risque fonts from google fonts.
 
+
+
+## Features.
+
+The game consists of a  home page and three games pages to provide levels easy, medium and hard.
+
+The home page contains a start button which, when pressed, shows three buttons labelled easy, medium and hard that link to each of the game pages.
+
+![Home page](/assets/images/readme_images/features/home-page.jpg)
+
+Each of the game pages features a menu area at the top of the page with the following icons:
+
+    - Home, to return to the home page.
+    - Reset, to reset the game at the current level.
+    - Rate provides a pop- up box which allows the user to rate the game.
+    - Info produces a pop-up box with the game instructions.
+
+![Menu area](/assets/images/readme_images/features/icons.jpg)
+
+The game area shows the cards displayed on the board. The display shows 4 x 3, 4 x 5 and 5 x 4 cards on medium and large screens.
+
+![Easy boaard, large screens](/assets/images/readme_images/features/board-easy-large.jpg)
+![Medium board, large screens](/assets/images/readme_images/features/board-medium-large.jpg)
+![Hard board, large screeens](/assets/images/readme_images/features/board-hard-large.jpg)
+
+
+In small phones used in portrait orientation, the game area shows 3 x 4 cards on the easy level and a message to turn the phone round on levels medium and hard.
+
+![Easy board, portrait](/assets/images/readme_images/features/board-easy-portrait.jpg) 
+![Medium board, portrait](/assets/images/readme_images/features/board-medium-portrait.jpg)
+
+When used in landscape orientation, the game area shows 6 x 2, 8 x 2 and 10 x 2 cards.
+
+![Easy board, landscape](/assets/images/readme_images/features/board-easy-landscape.jpg)
+![Medium board, landscape](/assets/images/readme_images/features/board-medium-landscape.jpg)
+![Hard board, landscape](/assets/images/readme_images/features/board-hard-landscape.jpg)
+
+On complection of the game, a congratulations message tells the user the number of moves that were required to finish the game.
+
+![Congratulations message](/assets/images/readme_images/features/congratulations.jpg)
+
+At the bottom of each page, a link leads to he Piggy Before the Infection Started series webpage.
+
+![Piggy link](/assets/images/readme_images/features/piggy-link.jpg)
+
+
 ## Testing.
 
 Test log. [Test log](test-log.md)
