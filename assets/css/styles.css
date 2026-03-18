@@ -371,7 +371,7 @@ footer a {
 }
 /* Media queries */
 /* Deal with small devices in landscape */
-@media screen  and (orientation: portrait) and (max-width: 576px) {
+@media screen and (orientation: portrait) and (max-width: 576px) {
     #page-container {
         display: block;
     }
@@ -381,6 +381,9 @@ footer a {
     .button-container {
         max-width: 80%;
         justify-self: center;
+    }
+    .level-button {
+        width:50px;
     }
     .turn-message {
         visibility: visible;
@@ -426,6 +429,9 @@ footer a {
     /*Home page*/
     #img-bottom-5 {
         visibility: hidden;
+    }
+    .level-button {
+        width:50px;
     }
     /*Instructions box*/    
     #info-box {
