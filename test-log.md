@@ -27,6 +27,17 @@
 |05/03/26|The reset button works (easy level).|Play the game easy level. Half way through the game, press the reset button. The board should get populated again.|The reset button re-populates the board when in the middle of the easy game.|Pass|Set reset button in medium level.|
 |05/03/26|The reset button works (medium level).|Play the game medium level. Half way through the game, press the reset button. The board should get populated again.|The reset button re-populates the board when in the middle of the medium game.|Pass|Set the reset button in the hard level.|
 |05/03/26|The reset button works (hard level).|Play the game hard level. Half way through the game, press the hard game. The board should get populated again.|The reset button re-populates the board when in the middle of the hard game.|Pass|Add the moves counter to the screen.|
+|18/03/26| Reset button hides success message after completing the game.|Play the game until completed. Press reset button. Success message should disappear and a new game should load.|After pressing the reset button, the success message disappears and a new game is loaded.|Pass|
+|18/03/26|Rate icon brings up a prompt to give the game stars.|Press the rate icon. A prompt to give the game stars should appear.|The prompt appears.|Pass|Test stars.||
+|18/03/26|When a star is clicked on on the rate prompt, all the stars below it are highlighted.| Press the rate icon. Press one of the stars. That star and the stars to its left should be highlighted.|The required number of stars is highlighted.|Pass|Test submit button.|
+|18/03/26|After pressing the submit button on the rate prompt, a thank you message appears if a rating has been given.| Press the rate icon. Highlight some stars. Press submit. A thank you message should appear.|A thank you message appears after submiting.|Pass|Submit whithout a rating.|
+|18/03/26|If there is no rating, the submit button has no effect.|Press the rate icon. Press the submit button without highlighting any stars. Nothing should happen.|Nothing happens when the submit button is pressed before highlighting any stars.|Pass|Test exit button|
+|18/03/26|The exit button makes the rate prompt disappear|Press the rate icon. Highlight some stars. Press the exit button. The rate prompt should disappear. When the rate icon is pressed again, the stars should not be highlighted.|The rate prompt disappears when the exit button is pressed. When the rate icon is pressed again, the stars are not highlighted.|Pass|Test the exit button on the thank you message.|
+|18/03/26|The thank you message disappears when the exit button is pressed. The stars are reset.|Press the rate icon and highlight some stars. Press the submit button. Press the exit button on the thank you message that appears.The message should disappear. When the rate icon is pressed again, the stars should have been reset.|The message disappears after pressing exit on the thank you message. When the rate icon is pressed again, the stars are not highlighted.|Pass|
+|18/03/26|When the info icon is pressed, a box with the game instructions appears.|Press the info icon. The instructions box should appear.|The instructions box appears after pressing the info icon.|Pass|Test the exit button.|
+|18/03/26|When the exit button on the info box is pressed, the instructions box disappears.|Press the info icon. Press the exit button on the info box. The box should disappear.| The info box disappears when the exit button is pressed.|Pass.|
+
+
 
 
 
