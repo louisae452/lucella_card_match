@@ -93,11 +93,25 @@ Test log. [Test log](test-log.md)
 
 
 ## Credits.
+[GitHub](https://github.com/).
 
+To choose additional green colour: [Canva](https://www.canva.com/colors/color-wheel/).
+
+To choose title font: [Google Fonts](https://fonts.google.com/).
+
+To choose icons: [Font Awesome](https://fontawesome.com/).
+
+To manipulate pictures: Microsoft photos.
+
+To convert pictures: Pixillion Image Converter.
 
 To write the readme file: [Markdown Guide: Basic Syntax.](https://www.markdownguide.org/basic-syntax/)
 
 To make favicon: [favicon.io](https://favicon.io/).
+
+To test the site: Google Dev Tools.
+
+For general information: [w3schools](https://www.w3schools.com/).
 
 To choose image sizes: [Website image size guidelines for 2026.](https://www.shopify.com/blog/image-sizes)
 
