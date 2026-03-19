@@ -126,6 +126,26 @@ At the bottom of each page, a link leads to he Piggy Before the Infection Starte
 
 ![Piggy link](/assets/images/readme_images/features/piggy-link.jpg)
 
+## The logic behind the game.
+
+On loading the game page, the following things happen:
+
+- The board is populated with random card-pairs using the populate_board() function;
+
+- An event listener is used to turn only two cards on click using the setevent() function.
+
+ - An event listener is used to reset the game. This resets the card board to a newly populated board, resets the number of cards turned on the board and the number of moves, clears the congratulations message if it was loaded and re-starts the game with the setevent() function.
+
+ - An event listener to rate the game which makes the rate-box visible, sets the rating with the rate_game() function and sets event listeners to submit the rating and exit the box.
+
+ - An event listener to show and hide instructions.
+
+ The setevent()function, which runs the main game, uses the turncard2() function to allow for only two cards at a time to be turned, and then uses the check_answer() function to check if the two cards are equal, in which case they are removed with the remove_cards() function or not so they are turned back. The number of moves is then increased by one and the setevent() function is run again.
+
+ The remove_cards() function, as well as removing the matching cards from the board, checks wether the board is empty and if it is, shows a congratulations message indicating the number of moves that were needed to complete the game.
+
+ 
+
 
 ## Testing.
 
