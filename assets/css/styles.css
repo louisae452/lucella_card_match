@@ -32,8 +32,6 @@ main {
     /*Use all the available space */
     flex: 1 0 auto;
     background-color: var(--pink);
-
-    /*max-height: 100%;*/
     max-width: 100%;
     justify-self: center;
 }
@@ -78,7 +76,7 @@ main {
 }
 #title1 {
     font-family: var(--title-font);
-    font-weight: 4000;
+    font-weight: 1000;
     color: var(--forest-green);
     font-size: 3em;
     margin: 0px;
@@ -86,7 +84,6 @@ main {
     animation-duration: 8s;
 }
 #title2 {
-    display: relative;
     z-index: 3;
     font-family: var(--title-font);
     font-size: 1em;
@@ -134,7 +131,7 @@ main {
 /*Home page pictures*/
 .picture-home {
     height: 100%;
-    width: 20%px;
+    width: 20%;
     display: grid;
     grid-template-columns: 30% 30% 30%;
 }
@@ -302,7 +299,6 @@ i {
 .upturned {
     transform: rotateY(180deg);
 }
-
 /*get rid of matching cards. */
 .card-match {
     transition: 2s;
@@ -339,7 +335,7 @@ i {
 .congratulations-message {
     display: grid;
     width: 80%;
-    height: 80%px;
+    height: 80%;
     background-color: transparent;
     color: #064407;
     place-self: center;
@@ -396,14 +392,11 @@ footer a {
         font-size: 3em;
     }
 }
- 
-
 @media screen and (min-width: 576px) {
     .turn-message {
         visibility: hidden;
     }
 }
-
 @media screen and (orientation: landscape) and (max-width: 992px) {
     /*Modify columns in landscape*/
     #card-container-easy {

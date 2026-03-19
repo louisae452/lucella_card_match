@@ -81,6 +81,36 @@ As the game will be used to promote the Piggy Before the Infection Started serie
 
 It will also use the bangers and risque fonts from google fonts.
 
+## Changes to the design.
+
+Throrough the development, some changes were made to the original design.
+
+In the home page, the footer was styled with the same colour as the main area. A simple link to the Piggy Before the Infection Started webpage was provided.
+
+The level buttons in small screens ended up having the samae disposition as in the larger screens, although less width was given to them.
+
+In larger screens, some of the Piggy characters were added to fill thte screen up.
+
+
+![Home page](/assets/images/readme_images/features/home-page.jpg)
+
+The rate the game feature was moved to the game pages.
+
+In the game pages, both the footer and header were styled in the main game area colour.
+
+The footer, once again, contained only the link to the Piggy Before The Infection Started.
+
+In the header, icons linking to the home page and offering reset, rate the game and instructions were added.
+
+The timer was eliminated in favour of evaluating the success in the game by providing the number of moves needed to clear the board at the end of the game.
+
+![Game page](/assets/images/readme_images/features/game-page-full.jpg)
+
+In smaller screens, it was found that hte medium and hard levels neede the cards to be too small to be seen comfortably on the portrait orientation. A message prompting to turn the device appears. On the landscape orientation, the board shows 6 x 2, 8 x 2 and 10 x 2 cards.
+
+A new green colour, #dffce0 was added to fill th4e ack of the csrds and the rate, info and congratulations boxes.
+
+The font Henny Penny was added to be used for the title.
 
 
 ## Features.
@@ -93,16 +123,19 @@ The home page contains a start button which, when pressed, shows three buttons l
 
 Each of the game pages features a menu area at the top of the page with the following icons:
 
-    - Home, to return to the home page.
-    - Reset, to reset the game at the current level.
-    - Rate provides a pop- up box which allows the user to rate the game.
-    - Info produces a pop-up box with the game instructions.
+- Home, to return to the home page.
+
+- Reset, to reset the game at the current level.
+
+- Rate provides a pop- up box which allows the user to rate the game.
+
+- Info produces a pop-up box with the game instructions.
 
 ![Menu area](/assets/images/readme_images/features/icons.jpg)
 
 The game area shows the cards displayed on the board. The display shows 4 x 3, 4 x 5 and 5 x 4 cards on medium and large screens.
 
-![Easy boaard, large screens](/assets/images/readme_images/features/board-easy-large.jpg)
+![Easy board, large screens](/assets/images/readme_images/features/board-easy-large.jpg)
 ![Medium board, large screens](/assets/images/readme_images/features/board-medium-large.jpg)
 ![Hard board, large screeens](/assets/images/readme_images/features/board-hard-large.jpg)
 
@@ -143,6 +176,9 @@ On loading the game page, the following things happen:
  The setevent()function, which runs the main game, uses the turncard2() function to allow for only two cards at a time to be turned, and then uses the check_answer() function to check if the two cards are equal, in which case they are removed with the remove_cards() function or not so they are turned back. The number of moves is then increased by one and the setevent() function is run again.
 
  The remove_cards() function, as well as removing the matching cards from the board, checks wether the board is empty and if it is, shows a congratulations message indicating the number of moves that were needed to complete the game.
+
+ ## Bugs.
+
 
  
 

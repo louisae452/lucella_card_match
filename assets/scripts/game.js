@@ -166,7 +166,7 @@ function reset_cards() {
     cards_to_reset.forEach(cards_to_reset => {
         cards_to_reset.classList.add("card-inner");
         cards_to_reset.classList.remove("card-match");
-        cards_to_reset.classList.remove("upturned");      
+        cards_to_reset.classList.remove("upturned");
     });
     turncard= document.querySelectorAll(".card-inner");
     return turncard;
