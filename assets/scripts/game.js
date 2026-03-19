@@ -5,7 +5,9 @@ const available_cards = ["billy.webp", "boris.webp","boris_superman.webp", "clow
 // Array of available positions.
 const total_available_positions = ["image-1e", "image-2e", "image-3e", "image-4e", "image-5e", "image-6e", "image-7e", "image-8e", "image-9e", "image-10e", "image-11e", "image-12e", "image-13e", "image-14e", "image-15e", "image-16e", "image-17e", "image-18e", "image-19e", "image-20e"];
 let turncard = document.querySelectorAll(".card-inner");
-console.log("turncard length" + turncard.length);
+let cards_to_reset = document.querySelectorAll(".card-reset");
+//Added
+let congrat_message_box = document.getElementById("congratulations");
 // Wait for document to load before running the script.
 document.addEventListener("DOMContentLoaded", function() {
     // Populate the board.
@@ -20,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
         reset_number_moves();
         populate_board();
         //Get rid of congratulations message.
-        let congrat_message_box = document.getElementById("congratulations");
         congrat_message_box.classList.add("hidden");
         setevent();
     });
@@ -65,6 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
             info_box.style.visibility = "hidden";
         });
 });
+//Functions
 // Function to set eventlistener to turn cards round when clicked.
 function setevent() {
     turncard.forEach(cardlisten);
@@ -110,8 +112,6 @@ function check_answer() {
                 setTimeout(function() {
                     remove_cards(card1, card2);
                 },1000);
-            } else {
-                console.log(" no match");
             }
             // Turn back upturned class
             setTimeout(function(){
@@ -133,7 +133,7 @@ function remove_cards(card1, card2) {
     turncard= document.querySelectorAll(".card-inner");
     let cards_left = turncard.length;
     if (cards_left == 0) {
-        let congrat_message_box = document.getElementById("congratulations");
+        //let congrat_message_box = document.getElementById("congratulations");
         congrat_message_box.classList.remove("hidden");
         let congrat_message = document.getElementById("message");
         congrat_message.innerText =`CONGRATULATIONS! YOU CLEARED THE BOARD IN ${number_moves} MOVES!`;
@@ -146,8 +146,7 @@ function populate_board() {
     let available_positions =total_available_positions.slice(0, (turncard.length));
     // Choose a random card (6 times).
     for (let i=0; i<(turncard.length/2); i++) {
-            let random_card_index = Math.floor(Math.random() *(available_cards.length - 1));
-            console.log(random_card_index);
+            let random_card_index = Math.floor(Math.random() *(available_cards.length));
             //Choose a random position (2 times)
             for (let n=0; n<2; n++) {
                 let random_position_index = Math.floor(Math.random() * (available_positions.length -1));
@@ -164,12 +163,13 @@ function populate_board() {
 }
 // Function to reset the cards:
 function reset_cards() {
-    let cards_to_reset = document.querySelectorAll(".card-reset");
     cards_to_reset.forEach(cards_to_reset => {
         cards_to_reset.classList.add("card-inner");
         cards_to_reset.classList.remove("card-match");
-        cards_to_reset.classList.remove("upturned");
+        cards_to_reset.classList.remove("upturned");      
     });
+    turncard= document.querySelectorAll(".card-inner");
+    return turncard;
 }
 // Function to reset the number of turns.
 function reset_number_turns() {
