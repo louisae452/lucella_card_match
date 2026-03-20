@@ -131,7 +131,6 @@ main {
 /*Home page pictures*/
 .picture-home {
     height: 100%;
-    width: 20%;
     display: grid;
     grid-template-columns: 30% 30% 30%;
 }

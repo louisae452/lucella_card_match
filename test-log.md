@@ -1,16 +1,35 @@
 # Lucella card match test log.
-|
-## Navigation.
+
+## Contents.
+
+1. [Navigation.](#1-navigation)
+
+2. [Functionality.](#2-functionality)
+
+3. [User stories.](#3-user-stories)
+
+4. [User experience.](#4-user-experience)
+
+5. [Responsiveness.](#5-responsiveness)
+
+6. [Validation.](#6-validation)
+
+7. [Lighthouse.](#7-lighthouse)
+
+8. [Bugs.](#8-bugs)
+
+
+## 1. Navigation.
 
 |Date|Link|Expected result|Pass/Fail|
 |:---|:----|:----|:---|
-|Home page.| | | |
+|**Home page.**| | | |
 |19/03/26|Start button|Level buttons appear.|Pass|
 |19/03/26|Easy button|Links to easy level game page.|Pass|
 |19/03/26|Medium button|Links to medium level game page.|Pass|
 |19/03/26|Hard button|Links to hard level game page.|Pass|
 |19/03/26|Piggy link|Opens Piggy webpage on new window.|Pass|
-|Easy level game page.| | | |
+|**Easy level game page.**| | | |
 |19/03/26|Home icon.|Links to home page.|Pass|
 |19/03/26|Rate icon.|Opens rate box.|Pass|
 |19/03/26|Rate box submit button.|Opens thank you box.|Pass|
@@ -18,7 +37,7 @@
 |19/03/26|Thank you box exit button.|Clears the thank you box.|Pass|
 |19/03/26|Info icon.|Opens info box.|Pass|
 |19/03/26|Piggy link|Opens Piggy webpage on new window.|Pass|
-|Medium level game page.| | | |
+|**Medium level game page.**| | | |
 |19/03/26|Home icon.|Links to home page.|Pass|
 |19/03/26|Rate icon.|Opens rate box.|Pass|
 |19/03/26|Rate box submit button.|Opens thank you box.|Pass|
@@ -26,7 +45,7 @@
 |19/03/26|Thank you box exit button.|Clears the thank you box.|Pass|
 |19/03/26|Info icon.|Opens info box.|Pass|
 |19/03/26|Piggy link|Opens Piggy webpage on new window.|Pass|
-|Hard level game page.| | | |
+|**Hard level game page.**| | | |
 |19/03/26|Home icon.|Links to home page.|Pass|
 |19/03/26|Rate icon.|Opens rate box.|Pass|
 |19/03/26|Rate box submit button.|Opens thank you box.|Pass|
@@ -37,7 +56,7 @@
 
 
 
-## Functionality.
+## 2. Functionality.
 
 |Date tested |Test | Expected result | Result | Pass/Fail |Next|
 |:---- |:----|:----|:----|:----:|:----|
@@ -73,7 +92,7 @@
 |18/03/26|When the info icon is pressed, a box with the game instructions appears.|Press the info icon. The instructions box should appear.|The instructions box appears after pressing the info icon.|Pass|Test the exit button.|
 |18/03/26|When the exit button on the info box is pressed, the instructions box disappears.|Press the info icon. Press the exit button on the info box. The box should disappear.| The info box disappears when the exit button is pressed.|Pass.|
 
-## User stories.
+## 3. User stories.
 
 - The game is easy to navigate by pressing the start button and then the required level button. The name of the game gives a clear indication of what the game is about and the info box gives clear instructions. 
 
@@ -91,13 +110,13 @@
 
 ![Rate box](/assets/images/readme_images/testing/rate-box.jpg)
     
-## User experience.
+## 4. User experience.
 
 |Date|Poblem|Solution|
 |:----|:----|:----|
 |05/03/26. |After a pair of exposed cards has been dealt with, it takes too long to be able to turn the next card on the board. That can be frustated.|The time function to get reset the eventListener was adjusted.|
 
-## Responsiveness.
+## 5. Responsiveness.
 
 The game was tested on the following devices:
 
@@ -141,7 +160,7 @@ Some additional tests were made to ensure that all the features fit in small scr
 |19/03/26|Info box shows fully on portrait when the info icon is clicked.|Go to the game page on portrait. Click on the info icon. The info box should show fully on the screen.| The info box shows fully on portrait.|Pass|
 |19/03/26|Info box shows fully on landscape when the info icon is clicked.|Got to the page game on landscape. Click on the info icon. The info box should show fully on the screen.|The info box shows fully on landscape.|Pass|
 
-## Validation.
+## 6. Validation.
 
 The html files were validated using the [w3 HTML validator](https://validator.w3.org/#validate_by_upload).
 
@@ -173,7 +192,7 @@ The game.js file showed one warning. However, the js Lint documentation specifie
 
 ![game.js validation](/assets/images/readme_images/validation/game-js.jpg)
 
-## Lighthouse.
+## 7. Lighthouse.
 
 Lighthouse was run on all pages on Google Dev Tools. These are the results.
 
@@ -187,7 +206,7 @@ Scores for the easy level page on desktop and mobile.
 ![Easy level desktop](/assets/images/readme_images/lighthouse/easy-desktop.jpg)
 ![Easy level mobile](/assets/images/readme_images/lighthouse/easy-mobile.jpg)
 
-Scores for the medium level page on desktop and mobile.
+Scores for the medium level page on desktop and mobile.-
 
 ![Medium level desktop](/assets/images/readme_images/lighthouse/medium-desktop.jpg)
 ![Medium level mobile](/assets/images/readme_images/lighthouse/medium-mobile.jpg)
@@ -196,3 +215,17 @@ Scores for the hard level page on desktop and mobile.
 
 ![Hard level desktop](/assets/images/readme_images/lighthouse/hard-desktop.jpg)
 ![Hard level mobile](/assets/images/readme_images/lighthouse/hard-mobile.jpg)
+
+## 8. Bugs.
+
+- After testing the responsive design on Google Developer Tools, the game was tested on mobile phones. It was found that, although it worked on iphone, the display on Samsung phones did not correspond with the image produced by the Developer Tools.
+
+![Image of early display on Samsung phones](/assets/images/readme_images/testing/s25-test1.jpg)
+
+The problem was solved by reducing the size of the cards for small screens in landscape orientation.
+
+- Later on, it was found that while the display in portrait orientation worked fine, if the Samsung phone was rotated from landscape to portrait, the display was not correct. This problem had not been highlighted by Google Developer Tools either.
+
+![Image of display after rotating Samsung phones](/assets/images/readme_images/testing/s25-test2.jpg)
+
+This was solved by adding *and(orientation:portrait)* on the appropriate media query.

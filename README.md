@@ -1,6 +1,6 @@
 # Lucella game card.
 
-INSERT LINK
+[View the finished project here.](https://louisae452.github.io/lucella_card_match/)
 
 The buzzword of the neurological world this days is neuroplasticity. Long gone are the days where we thought that once you reach your forties, fifties at best, the only way is downhill. It is now a recognized fact that your brain is continuously developing, creating new neurological connexions and pruning unused pathways. 
 
@@ -12,7 +12,52 @@ Lucella card match is a basic card matching game. A set of cards will be laid do
 
 Although the game will use cards based on the characters of the series “Piggy before the infection started” to appeal to the series’ followers, it will be just as easily played by anybody, young and old alike.
 
-## Business goals.
+## Contents.
+1. [Business goals.](#1-business-goals)
+
+2. [User needs](#2-user-needs)
+
+3. [User stories.](#3-user-stories)
+
+4. [Design.](#4-design)
+
+5. [Typograpy and colour scheme.](#5-typography-and-colour-scheme)
+
+6. [Changes to the design.](#6-changes-to-the-design)
+
+7. [Features.](#7-features)
+
+8. [The logic behind the game.](#8-the-logic-behind-the-game)
+
+9. [Testing.](test-log.md)
+
+    1. [Navigation.](test-log.md#1-navigation)
+    
+    2. [Functionality.](test-log.md#2-functionality)
+    
+    3. [User stories.](test-log.md#3-user-stories)
+    
+    4. [User experience.](test-log.md#4-user-experience)
+    
+    5. [Responsiveness.](test-log.md#5-responsiveness)
+    
+    6. [Validation.](test-log.md#6-validation)
+    
+    7. [Lighthouse.](test-log.md#7-lighthouse)
+    
+    8. [Bugs.](test-log.md#8-bugs)
+
+10. [Deployment.](#10-deployment)
+
+11. [Languages used.](#11-languages-used)
+
+12. [Frameworks, libraries and programs.](#12-frameworks-libraries-and-programs)
+
+13. [Media.](#13-media)
+
+13. [Acknowledgements.](#14-acknowledgements)
+
+## 1. Business goals.
 
 - To create a game that is easily taken up and entertains.
 - To create a game that appeals to Piggy Before the Infection Started followers.
@@ -20,7 +65,7 @@ Although the game will use cards based on the characters of the series “Piggy 
 - To provide a game that helps improve cognitive functions.
 - To provide a game that provides increasing challenge.
 
-## User needs.
+## 2. User needs.
 
 - To have a game that can be taken up easily during a short interval of free time.
 - To be able to understand easily how the game works.
@@ -29,7 +74,7 @@ Although the game will use cards based on the characters of the series “Piggy 
 - To be able to see progress in gaming ability.
 - To be able to conect to the 'Piggy Before the Infection Started' home page easily.
 
-## User stories.
+## 3. User stories.
 
 - As the developer:
 
@@ -53,7 +98,7 @@ Although the game will use cards based on the characters of the series “Piggy 
 
     - I also want a game that portrays my favourite characters so that I can feel closer to the series.
 
-## Design.
+## 4. Design.
 
 Lucella card matching is a simple card matching games. The player will be able to choose a board made of 4 x 3, 4 x 4 or 5 x 5 cards turned upside down. By uncovering two cards at a time, the player needs to find matching pairs of cards. Each time a pair is matched, it disappears until the board is empty. 
 
@@ -73,7 +118,7 @@ On clicking on the rate the game, a window will appear so that players can rate 
 [Game page wireframe](/assets/images/readme_images/wireframes/game-page-wireframe.jpg)
 
 
-## Typography and colour scheme.
+## 5 Typography and colour scheme.
 
 As the game will be used to promote the Piggy Before the Infection Started series, it will use the same colour scheme as the series’ webpage. It will also use the same favicon.
 
@@ -81,7 +126,7 @@ As the game will be used to promote the Piggy Before the Infection Started serie
 
 It will also use the bangers and risque fonts from google fonts.
 
-## Changes to the design.
+## 6. Changes to the design.
 
 Throrough the development, some changes were made to the original design.
 
@@ -113,7 +158,7 @@ A new green colour, #dffce0 was added to fill th4e ack of the csrds and the rate
 The font Henny Penny was added to be used for the title.
 
 
-## Features.
+## 7. Features.
 
 The game consists of a  home page and three games pages to provide levels easy, medium and hard.
 
@@ -159,7 +204,7 @@ At the bottom of each page, a link leads to he Piggy Before the Infection Starte
 
 ![Piggy link](/assets/images/readme_images/features/piggy-link.jpg)
 
-## The logic behind the game.
+## 8. The logic behind the game.
 
 On loading the game page, the following things happen:
 
@@ -177,25 +222,50 @@ On loading the game page, the following things happen:
 
  The remove_cards() function, as well as removing the matching cards from the board, checks wether the board is empty and if it is, shows a congratulations message indicating the number of moves that were needed to complete the game.
 
- ## Bugs.
+## 9. Testing.
 
+The log of all the tests done can be found here. [Lucella card match test log](test-log.md)
 
- 
+## 10. Deployment.
 
+The project was deployed in [GitHub](https://github.com/).
 
-## Testing.
+The process followed was:
 
-Test log. [Test log](test-log.md)
+- On GitHub, navigate to the project page: https://github.com/louisae452/lucella_card_match.
+- Go to settings.
+- On the general menu on the left, go to pages.
+- Select main branch and save.
+- To access the deployed site, click on the deployments section on the right side of the main project page.
 
+The site can be accessed from: https://louisae452.github.io/lucella_card_match/
 
+### Local deployment.
 
+To fork the project:
 
+- On Github, mavigate to the project page: https://github.com/louisae452/lucella_card_match.
+- Click on the fork icon.
+- Select new branch.
+- Give the branch a name and save.
 
+To clone the project:
 
+- On Github, navigate to the project page: https://github.com/louisae452/lucella_card_match.
+- Click on the code button.
+- Copy the address shown.
+- Open your code editor.
+- On the terminal, navigate to the desired directory.
+- Type 'git clone' followed by the address you copied.
+- Press enter.
 
+## 11. Languages used.
 
-## Credits.
-[GitHub](https://github.com/).
+HTML, CSS, JavaScript.
+
+## 12. Frameworks, libraries and programs.
+
+To deploy the game: [GitHub](https://github.com/).
 
 To choose additional green colour: [Canva](https://www.canva.com/colors/color-wheel/).
 
@@ -213,11 +283,34 @@ To make favicon: [favicon.io](https://favicon.io/).
 
 To test the site: Google Dev Tools.
 
+To test the HTML: [w3 HTML validator](https://validator.w3.org/#validate_by_upload)
+
+To test the CSS: [w3 CSS validator](https://jigsaw.w3.org/css-validator)
+
+To test the JS: [JSLint](https://www.jslint.com/)
+
 For general information: [w3schools](https://www.w3schools.com/).
 
 To choose image sizes: [Website image size guidelines for 2026.](https://www.shopify.com/blog/image-sizes)
 
 Flex-box: [Flexbox froggy](https://flexboxfroggy.com/)
 
-To handle orientation : [orientation](https://www.slingacademy.com/article/enhance-mobile-uis-by-checking-orientation-in-javascript/)
+To handle orientation : [Sling Academy](https://www.slingacademy.com/article/enhance-mobile-uis-by-checking-orientation-in-javascript/)
 
+## 13. Media.
+
+All images used on the site were created by SuperJakeJoseCat.
+
+## 14. Acknowledgements.
+
+This project would not have been possible without the following people:
+
+My tutor, Kevin Loughrey who helped and encouraged me through  the development of the project.
+
+My friend and colleague, Veronica Teodorof for always being supportive and sharing very valuable tips.
+
+My sister, Tere Roncero for pointing out that the reset button was not working properly.
+
+My family for their unconditional support.
+
+SuperJakeJoseCat who provided all the images and listened to me rambling on non stop.
