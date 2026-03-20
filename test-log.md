@@ -229,3 +229,5 @@ The problem was solved by reducing the size of the cards for small screens in la
 ![Image of display after rotating Samsung phones](/assets/images/readme_images/testing/s25-test2.jpg)
 
 This was solved by adding *and(orientation:portrait)* on the appropriate media query.
+
+[Back to Readme file](/README.md)
